@@ -1,0 +1,25 @@
+{
+  "name": "praticaaula03_quarta",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoGobboo/PraticaAula03_Quarta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoGobboo/PraticaAula03_Quarta/issues"
+  },
+  "homepage": "https://github.com/JoaoGobboo/PraticaAula03_Quarta#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.14.0",
+    "sequelize": "^6.37.6"
+  }
+}

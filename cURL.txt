@@ -1,0 +1,34 @@
+#comandos cURL
+
+GET /produtos
+ - curl -X GET http://localhost:3000/produtos
+
+POST /produtos
+
+curl -X POST http://localhost:3000/produtos \
+    -H "Content-Type: application/json" \
+    -d '{
+        "nome": "Produto E",
+        "fornecedor": "Fornecedor X",
+        "endereco_fornecedor": "Endereço X",
+        "quantidade": 50,
+        "endereco": "Local X",
+        "preco_unitario": 19.99
+    }'
+
+PUT /produtos/:id
+
+curl -X PUT http://localhost:3000/produtos/1 \
+    -H "Content-Type: application/json" \
+    -d '{
+        "nome": "Produto A Atualizado",
+        "fornecedor": "Fornecedor X",
+        "endereco_fornecedor": "Novo Endereço X",
+        "quantidade": 15,
+        "endereco": "Novo Local X",
+        "preco_unitario": 20.00
+    }'
+
+DELETE /produtos/:id
+
+- curl -X DELETE http://localhost:3000/produtos/1
