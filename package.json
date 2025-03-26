@@ -20,6 +20,7 @@
   "dependencies": {
     "express": "^4.21.2",
     "mysql2": "^3.14.0",
+    "praticaaula03_quarta": "file:",
     "sequelize": "^6.37.6"
   }
 }
