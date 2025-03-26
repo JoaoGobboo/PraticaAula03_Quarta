@@ -1,0 +1,52 @@
+Instruções:
+
+## Configuração do Banco de Dados
+Criar um banco de dados que contenha uma tabela chamada `produtos` com os seguintes campos:
+
+- `id` (chave primária, auto-incremento)
+- `nome` (string)
+- `fornecedor` (string)
+- `endereco_fornecedor` (string)
+- `quantidade` (inteiro)
+- `endereco` (string)
+- `preco_unitario` (float)
+
+## Popular a Tabela
+Criar **quatro registros** de produtos fictícios.
+
+## Implementação das Rotas CRUD
+- `GET /produtos` - Retorna a lista de produtos.
+- `POST /produtos` - Adiciona um novo produto.
+- `PUT /produtos/:id` - Atualiza um produto pelo ID.
+- `DELETE /produtos/:id` - Remove um produto pelo ID.
+
+## Tratamento de Erros
+- Retornar **200** para operações bem-sucedidas.
+- Retornar **404** caso um recurso não seja encontrado.
+- Retornar **500** para erros internos do servidor.
+- Retornar **501** para métodos não implementados.
+- Retornar **502** para erros externos.
+
+## Hospedagem do Código
+- O código-fonte da API deve ser versionado e hospedado no **GitHub, GitLab ou Bitbucket**.
+- O código do banco também deve ser submetido via git, podendo estar em repositórios diferentes ou no mesmo repositório.
+
+## Testes com cURL
+Criar comandos cURL para testar cada uma das operações CRUD:
+
+- `GET /produtos`
+- `POST /produtos`
+- `PUT /produtos/:id`
+- `DELETE /produtos/:id`
+
+Salvar esses comandos em um arquivo chamado **testes_curl.txt** e adicioná-lo ao repositório.
+
+## Entrega
+Submeter no formulário o **link do repositório** contendo a API e os testes cURL.
+
+## Critérios de Avaliação
+- Estrutura e organização do código.
+- Implementação correta das operações CRUD.
+- Tratamento adequado dos erros.
+- Correta utilização do sistema de versionamento.
+- Testes funcionais com cURL.
